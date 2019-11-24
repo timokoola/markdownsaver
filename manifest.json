@@ -1,0 +1,26 @@
+{
+  "icons": {
+    "128": "images/markdown_128x128.png"
+  },
+  "name": "Create a markdown link for the page",
+  "version": "0.1",
+  "browser_action": {
+    "default_title": "Create a markdown link for the page",
+    "default_icon": "images/markdown_128x128.png"
+  },
+  "commands": {
+    "copy_link": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L"
+      },
+      "description": "Create a markdown link for the page"
+    }
+  },
+  "background": {
+    "scripts": ["markdowner.js"],
+    "persistent": false
+  },
+  "permissions": ["contextMenus", "tabs", "clipboardWrite", "notifications"],
+  "description": "This extension copies a link to current page as a markdown link to clipboard.",
+  "manifest_version": 2
+}
